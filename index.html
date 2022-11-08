@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html>
-<body>
+<head>
+    <title>Sydney Ramos</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="public/styles.css" rel="stylesheet">
+</head>
+<body class="text-blue-600">
+
+    <div>
 
     <h1>Sydney Ramos</h1>
     <h3>Skills</h3>
@@ -13,7 +21,34 @@
     </ul>
 
     <h3>Forrest Baby</h3>
-    <img src="src/images/forrest_baby.jpeg" alt="Forrest Baby" style="width:300px;height:400px;">
+    <img src="public/images/forrest_baby.jpeg" alt="Forrest Baby" style="width:300px;height:400px;">
+
+    </div>
+
+    <h1 class="text-9xl content-center">Portfolio</h1>
+
+    <div class="container grid grid-cols-3 gap-3 mx-auto">
+        <div class="w-full rounded hover:shadow-2xl">
+            <img src="public/images/forrest_baby.jpeg"
+                alt="image">
+        </div>
+        <div class="w-full rounded-md hover:place-content-center">
+            <img src="public/images/forrest_baby.jpeg"
+                alt="image">
+        </div>
+        <div class="group relative block overflow-hidden rounded-md transition-all duration-500 hover:shadow-2xl">
+            <a href="#" class="lightbox transition-all duration-500 group-hover:scale-105 tobii-zoom" title="">
+                <img src="public/images/forrest_baby.jpeg" alt="Forrest Baby">
+            </a>
+            <div class="absolute -bottom-52 group-hover:bottom-2 right-2 left-2 transition-all duration-500 bg-white dark:bg-slate-900 p-4 rounded shadow dark:shadow-gray-700">
+                <a href="#" class="hover:text-primary-600 text-lg transition duration-500 font-medium">Forrest Baby</a>
+                <h6 class="text-slate-400">Forrest Baby</h6>
+            </div>
+        </div>
+
+    </div>
+    <br>
+    <br>
 
 </body>
 </html>
