@@ -15,3 +15,4 @@ GitHub pages example
 - [Create a React App](https://coreui.io/blog/how-to-create-a-single-page-application-using-reactjs/)
 - [Bootstrap for React](https://react-bootstrap.github.io/getting-started/introduction)
 - [Webpack for React](https://www.educative.io/answers/how-to-create-a-react-application-with-webpack)
+- [Icons](https://fontawesome.com/v5/docs/web/use-with/react)
