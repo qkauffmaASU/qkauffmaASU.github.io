@@ -16,3 +16,4 @@ GitHub pages example
 - [Bootstrap for React](https://react-bootstrap.github.io/getting-started/introduction)
 - [Webpack for React](https://www.educative.io/answers/how-to-create-a-react-application-with-webpack)
 - [Icons](https://fontawesome.com/v5/docs/web/use-with/react)
+- [React Browser Router](https://www.youtube.com/watch?v=Ul3y1LXxzdU)

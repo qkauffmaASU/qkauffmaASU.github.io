@@ -11,6 +11,9 @@ import Navbar from './components/Navbar';
 import Home from './components/Home';
 import Portfolio from './components/Portfolio';
 import Footer from './components/Footer';
+import About from './components/About';
+import Contact from './components/Contact';
+import { Routes, Route, Link } from 'react-router-dom';
 
 class App extends Component {
   render() {
@@ -23,12 +26,38 @@ class App extends Component {
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
+        <nav>
+          This is the Navbar
+          <ul>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/about">About</Link>
+            </li>
+            <li>
+              <Link to="/projects">Projects</Link>
+            </li>
+            <li>
+              <Link to="/contact">Contact</Link>
+            </li>
+          </ul>
+        </nav>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />}/>
+          <Route path="/projects" element={<Portfolio />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<Contact />} />
+        </Routes>
         <FontAwesomeIcon icon={faCoffee} />
         <FontAwesomeIcon icon={faFacebook} size="sm" />
         <FontAwesomeIcon icon={faInstagram} size="xl" />
         <Button className="secondary">Hello World</Button>
         <Navbar />
         <Home />
+        <About />
+        <Contact />
         <Portfolio />
         <Footer />
       </div>
