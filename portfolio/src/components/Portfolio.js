@@ -1,18 +1,27 @@
 import React, { Component } from 'react';
-import forrest_baby from '../images/forrest_baby.jpeg';
-import Project from './Project';
+import img1 from '../images/portfolio-img1.jpg';
+import img2 from '../images/portfolio-img2.jpg';
+import img3 from '../images/portfolio-img3.jpg';
+import img4 from '../images/portfolio-img4.jpg';
+import img5 from '../images/portfolio-img5.jpg';
+import img6 from '../images/portfolio-img6.jpg';
+import { Project } from './Project';
 
 class Portfolio extends Component {
   render() {
     return (
-      <div className="container">
-        <div className="row">
-          <Project title="Forrest Baby"
-            caption="Cutest Boy Ever"
-            img={{width: 300, height: 400, src: forrest_baby}}
-          />
+      <section id="portfolio">
+        <div className="container">
+          <div className="row">
+            <Project img={{src: img1}} />
+            <Project img={{src: img2}} />
+            <Project img={{src: img3}} />
+            <Project img={{src: img4}} />
+            <Project img={{src: img5}} />
+            <Project img={{src: img6}} />
+          </div>
         </div>
-      </div>
+      </section>
     );
   }
 }

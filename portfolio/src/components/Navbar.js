@@ -1,26 +1,24 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import { PROJECTS, ABOUT } from '../constants/Navigation';
 
 class Navbar extends Component {
   render() {
     return (
-      <div className="navbar navbar-default navbar-static-top" role="navigation">
+      <div className="navbar navbar-default navbar-static-top">
         <div className="container">
+
           <div className="navbar-header">
-              <button className="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span className="icon icon-bar" />
-                <span className="icon icon-bar" />
-                <span className="icon icon-bar" />
-              </button>
-              <a href="" className="navbar-brand"><i className="fa fa-magnet"></i></a>
+            <Link to={PROJECTS} className="navbar-brand"><i className="fa fa-magnet"></i></Link>
           </div>
-          <div className="collapse navbar-collapse">
-              <ul className="nav navbar-nav navbar-right">
-                <li className="active"><a href="index.html">Projects</a></li>
-                <li><a href="about.html">Our Studio</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-              </ul>
+
+          <div className="navbar-collapse">
+            <ul className="nav navbar-nav navbar-right">
+              <li className="active"><Link to={PROJECTS}>Projects</Link></li>
+              <li><Link to={ABOUT}>About Sydney</Link></li>
+            </ul>
           </div>
+
         </div>
       </div>
     );
