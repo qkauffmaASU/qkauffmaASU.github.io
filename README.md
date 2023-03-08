@@ -17,3 +17,4 @@ GitHub pages example
 - [Webpack for React](https://www.educative.io/answers/how-to-create-a-react-application-with-webpack)
 - [Icons](https://fontawesome.com/v5/docs/web/use-with/react)
 - [React Browser Router](https://www.youtube.com/watch?v=Ul3y1LXxzdU)
+- [Tailwind with React](https://medium.com/codingthesmartway-com-blog/how-to-use-tailwind-css-with-react-9dd78bbdc0e0)
