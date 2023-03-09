@@ -4,7 +4,7 @@ import { PROJECTS } from '../constants/Navigation';
 
 export function Project({img}) {
   return (
-    <div className="col-md-4 col-sm-6">
+    <div className="col-4">
       <Link to={PROJECTS+"/1"}>
         <div className="portfolio-thumb">
           <img src={img.src} className="img-fluid" alt="..." />

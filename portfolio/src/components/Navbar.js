@@ -2,25 +2,26 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { PROJECTS, ABOUT } from '../constants/Navigation';
 
+// style={{paddingRight: 15, paddingLeft: 15}}
+const linkStyle = {letterSpacing: "1px", color: "#777"};
 class Navbar extends Component {
   render() {
     return (
-      <div className="navbar navbar-default navbar-static-top">
-        <div className="container">
-
-          <div className="navbar-header">
-            <Link to={PROJECTS} className="navbar-brand"><i className="fa fa-magnet"></i></Link>
+      <section id="navbar">
+        <div className="container py-5" >
+          <div className="row">
+            <div className="col-10 my-auto fs-1">
+              <Link to={PROJECTS}><i className="fa fa-magnet"></i></Link>
+            </div>
+            <div className="col-1 my-auto">
+              <Link to={PROJECTS} className="fs-6 float-end" style={linkStyle}>Projects</Link>
+            </div>
+            <div className="col-1 my-auto">
+              <Link to={ABOUT} className="fs-6 float-end" style={linkStyle}>About</Link>
+            </div>
           </div>
-
-          <div className="navbar-collapse">
-            <ul className="nav navbar-nav navbar-right">
-              <li className="active"><Link to={PROJECTS}>Projects</Link></li>
-              <li><Link to={ABOUT}>About Sydney</Link></li>
-            </ul>
-          </div>
-
         </div>
-      </div>
+      </section>
     );
   }
 }

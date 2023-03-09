@@ -7,11 +7,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import Navbar from './components/Navbar';
-import Home from './components/Home';
 import Portfolio from './components/Portfolio';
 import Footer from './components/Footer';
 import About from './components/About';
-import Contact from './components/Contact';
 import { Routes, Route } from 'react-router-dom';
 import { ABOUT, PROJECTS } from './constants/Navigation';
 import Spinner from './components/Spinner';
@@ -22,14 +20,16 @@ class App extends Component {
   render() {
     return (
       <>
-        {/* <Spinner /> */}
-        <Navbar />
-        <Routes>
-          <Route path={ABOUT} element={<About />}/>
-          <Route path={PROJECTS} element={<Portfolio />} />
-          <Route path="*" element={<Portfolio />} />
-        </Routes>
-        <Footer />
+        <Spinner />
+        <div className="px-5">
+          <Navbar />
+          <Routes>
+            <Route path={ABOUT} element={<About />}/>
+            <Route path={PROJECTS} element={<Portfolio />} />
+            <Route path="*" element={<Portfolio />} />
+          </Routes>
+          <Footer />
+        </div>
       </>
 
 
