@@ -1,11 +1,5 @@
 import React, { Component } from 'react';
 import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'font-awesome/css/font-awesome.min.css'
-import Button from 'react-bootstrap/Button';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCoffee } from '@fortawesome/free-solid-svg-icons';
-import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import Navbar from './components/Navbar';
 import Portfolio from './components/Portfolio';
 import Footer from './components/Footer';
@@ -21,7 +15,7 @@ class App extends Component {
     return (
       <>
         <Spinner />
-        <div className="px-5">
+        <div className="px-5 pb-4">
           <Navbar />
           <Routes>
             <Route path={ABOUT} element={<About />}/>

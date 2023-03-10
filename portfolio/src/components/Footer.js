@@ -1,49 +1,55 @@
 import React, { Component } from 'react';
-
-const faIconStyle = {color: "#777"};
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { ICON_STYLE, LINK_STYLE } from '../constants/Style';
 
 class Footer extends Component {
   render() {
     return (
-      <div className="container pt-5">
+      <div className="container pt-5 fs-6">
         <div className="row">
-          <div className="col-4 fs-1">
-            <i className="fa fa-magnet"></i>
-          </div>
 
-          <div className="col-4">
-            <div className="text-center">
-              <p>Charleston, SC United States</p>
+          <div className="col-4 my-auto">
+            <div className="text-left">
+              <a href="mailto:sydney_ramos@ymail.com" style={LINK_STYLE}>
+                <div className="text">sydney_ramos@ymail.com</div>
+                </a>
             </div>
           </div>
 
-          <div className="col-4">
+          <div className="col-4 my-auto">
+            <div className="text text-center">Charleston, SC United States</div>
+          </div>
+
+          <div className="col-4 my-auto">
             <div className="float-end">
-              <p className="text-right"><a href="mailto:sydney_ramos@ymail.com">sydney_ramos@ymail.com</a></p>
-              <p className="text-right">(+01) 2036109533</p>
+              <a href="tel:+12036109533" style={LINK_STYLE}>
+                <div className="text">(203) 610-9533</div>
+              </a>
             </div>
           </div>
         </div>
 
         <hr />
         
-        <div className="row">
-          <div className="col-10 fs-6">
+        <div className="row ">
+          <div className="col-8">
             <div>
-              <p>&copy; 2023 Sydney Ramos | All Rights Reserved.</p>
+              <div className="text">&copy; 2023 Sydney Ramos | All Rights Reserved.</div>
             </div>
           </div>
 
-          <div className="col-2 fs-6">
-            <div className="row">
-              <div className="col">
-                <a href="https://instagram.com" className="fa fa-facebook" style={faIconStyle}/>
+          <div className="col-4">
+            <div className="row float-end">
+              <div className="col fs-5">
+                <a href="https://instagram.com/sydramos/">
+                  <FontAwesomeIcon icon={faInstagram} style={ICON_STYLE} />
+                </a>
               </div>
-              <div className="col">
-                <a href="https://twitter.com" className="fa fa-twitter" style={faIconStyle} />
-              </div>
-              <div className="col">
-                <a href="https://linkedin.com" className="fa fa-linkedin" style={faIconStyle} />
+              <div className="col fs-5">
+                <a href="https://linkedin.com/in/sydneyramos">
+                  <FontAwesomeIcon icon={faLinkedin} style={ICON_STYLE} />
+                </a>
               </div> 
             </div>
           </div>

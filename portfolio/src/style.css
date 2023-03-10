@@ -95,15 +95,17 @@ h4 {
     font-weight: normal;
     letter-spacing: 2px;
 }
-    
-p {
-    color: #777;
-    font-size: 15px;
+
+.thin-text {
     font-weight: 300;
-    line-height: 26px;
+}
+
+div.text {
+    color: #777;
+    font-weight: 300;
     letter-spacing: 0.2px;
 }
-    
+
 strong {
     font-weight: 400;
 }
@@ -183,7 +185,7 @@ a {
 
 
 a:hover, a:active, a:focus {
-    color: #4d638c;
+    color: #777;
     outline: none;
 }
 
@@ -202,9 +204,3 @@ a:hover, a:active, a:focus {
 .navbar-link > li a:hover {
     color: #333 !important;
 } */
-
-/* This is needed */
-.fa {
-    color: #000;
-}
-    

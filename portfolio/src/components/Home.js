@@ -8,11 +8,11 @@ class Home extends Component {
       <div className="container pb-3 pt-4">
         <div className="row">
           <div className="col-12 mx-auto text-center">
-            <p className="fs-2 lh-base">
-              The creative web & mobile studio. we are young designers and focused on brand identity, web development and social marketing.
-            </p>
+            <div className="text fs-2 lh-base">
+              The creative web & mobile studio. We are young designers and focused on brand identity, web development and social marketing.
+            </div>
             <div className="mx-auto mt-3 w-25">
-              <hr className="mx-auto w-50"/>
+              <hr className="mx-auto w-25"/>
             </div>
           </div>
         </div>
