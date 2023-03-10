@@ -3,8 +3,6 @@ import { Link } from 'react-router-dom';
 import { PROJECTS, ABOUT } from '../constants/Navigation';
 import { LINK_STYLE } from '../constants/Style';
 
-// style={{paddingRight: 15, paddingLeft: 15}}
-
 class Navbar extends Component {
   render() {
     return (
