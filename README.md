@@ -20,3 +20,7 @@ GitHub pages example
 - [Tailwind with React](https://medium.com/codingthesmartway-com-blog/how-to-use-tailwind-css-with-react-9dd78bbdc0e0)
 - [Styling Images](https://tailwind-elements.com/docs/standard/content-styles/images/)
 - [Bootstrap Grid System](https://getbootstrap.com/docs/5.2/layout/grid/)
+
+
+## Notes
+- Switch JSX has been removed in react router v6

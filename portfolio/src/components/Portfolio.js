@@ -1,27 +1,22 @@
 import React, { Component } from 'react';
-import img1 from '../images/portfolio-img1.jpg';
-import img2 from '../images/portfolio-img2.jpg';
-import img3 from '../images/portfolio-img3.jpg';
-import img4 from '../images/portfolio-img4.jpg';
-import img5 from '../images/portfolio-img5.jpg';
-import img6 from '../images/portfolio-img6.jpg';
 import { Project } from './Project';
 import Home from './Home';
+import { PROJECT_1, PROJECT_2, PROJECT_3, PROJECT_4, PROJECT_5, PROJECT_6 } from '../constants/Data';
 
 class Portfolio extends Component {
   render() {
     return (
       <>
-      <Home />
+        <Home />
         <section id="portfolio">
           <div className="container">
             <div className="row">
-              <Project img={{src: img1}} />
-              <Project img={{src: img2}} />
-              <Project img={{src: img3}} />
-              <Project img={{src: img4}} />
-              <Project img={{src: img5}} />
-              <Project img={{src: img6}} />
+              <Project proj={PROJECT_1} />
+              <Project proj={PROJECT_2} />
+              <Project proj={PROJECT_3} />
+              <Project proj={PROJECT_4} />
+              <Project proj={PROJECT_5} />
+              <Project proj={PROJECT_6} />
             </div>
           </div>
         </section>
