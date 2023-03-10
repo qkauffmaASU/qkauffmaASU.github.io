@@ -6,15 +6,6 @@ import img4 from '../images/portfolio-img4.jpg';
 import img5 from '../images/portfolio-img5.jpg';
 import img6 from '../images/portfolio-img6.jpg';
 
-export const PROJECT_LIST = [
-    PROJECT_1,
-    PROJECT_2,
-    PROJECT_3,
-    PROJECT_4,
-    PROJECT_5,
-    PROJECT_6,
-];
-
 const DUMMY_DESCRIPTION = "Description goes here";
 
 export const PROJECT_1 = {
@@ -76,3 +67,12 @@ export const PROJECT_6 = {
         src: img6
     }
 }
+
+export const PROJECT_LIST = [
+    PROJECT_1,
+    PROJECT_2,
+    PROJECT_3,
+    PROJECT_4,
+    PROJECT_5,
+    PROJECT_6,
+];

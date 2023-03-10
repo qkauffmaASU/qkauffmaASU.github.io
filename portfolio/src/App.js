@@ -4,7 +4,7 @@ import Navbar from './components/Navbar';
 import Portfolio from './components/Portfolio';
 import Footer from './components/Footer';
 import About from './components/About';
-import { Routes, Route, Navigate} from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import { HOME, ABOUT, PROJECTS } from './constants/Navigation';
 import Spinner from './components/Spinner';
 import { SingleProject } from './components/SingleProject';
@@ -20,7 +20,8 @@ class App extends Component {
             <Route path={HOME} element={<Portfolio />} />
             <Route path={ABOUT} element={<About /> } />
             <Route path={PROJECTS + "/:id"} element={<SingleProject />} />
-            <Route path="*"  element={<Navigate to={HOME} replace />} />
+            <Route path="*" element={<Navigate to={HOME} replace />} />
+            {/* <Route path="*" element={<Portfolio />} /> */}
           </Routes>
           <Footer />
         </div>

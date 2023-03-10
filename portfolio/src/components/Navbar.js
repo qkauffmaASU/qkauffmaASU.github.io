@@ -19,7 +19,7 @@ class Navbar extends Component {
             <div className="col-5 my-auto" />
             <div className="col-1 my-auto text-center">
               <Link to={HOME} style={LINK_STYLE}>
-                <div className="text">Projects</div>
+                <div className="text">Portfolio</div>
               </Link>
             </div>
             <div className="col-1 my-auto text-center">

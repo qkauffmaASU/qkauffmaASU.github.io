@@ -9,3 +9,6 @@ package-lock.json
 
 # Build artifacts
 dist/
+
+# Log files
+*.log
